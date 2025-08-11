@@ -1,0 +1,133 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+*.log
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.next/
+out/
+dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment variables
+.env
+.env.production  
+.env.development
+# Allow .env.local for development setup (contains only safe local URLs)
+!frontend/.env.local
+
+# Docker
+*.log
+docker-compose.override.yml
+
+# Data
+data/*.csv
+data/*.json
+!data/.gitkeep
+
+# Models (exclude training outputs but keep essential trained models)
+ml-pipeline/models/.gitkeep
+# Allow essential trained models for the system to work
+!ml-pipeline/models/xgboost_model.pkl
+!ml-pipeline/models/lightgbm_model.pkl
+!ml-pipeline/models/neural_network_model.h5
+!ml-pipeline/models/scaler.pkl
+!ml-pipeline/models/model_metadata.json
+# Exclude other model files
+*.pb
+*.pth
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Database
+*.sql
+backups/
+postgres_data/
+
+# LocalStack
+.localstack/
+infrastructure/localstack/
+
+# Monitoring
+grafana_data/
+prometheus_data/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Testing
+coverage/
+.coverage
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Lambda
+lambda-functions/*.zip
+lambda-functions/package/
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Secrets
+*.pem
+*.key
+*.crt
+*.p12
+secrets/

@@ -1,0 +1,42 @@
+{
+  "training_date": "2025-08-11T07:49:19.747169",
+  "n_samples": 5000,
+  "features": [
+    "square_feet",
+    "building_age",
+    "num_floors",
+    "occupancy_rate",
+    "walk_score",
+    "transit_score",
+    "crime_rate",
+    "school_rating",
+    "distance_to_downtown",
+    "annual_revenue",
+    "expenses",
+    "cap_rate",
+    "net_operating_income"
+  ],
+  "models": {
+    "xgboost": {
+      "mae": 2225773.8924685842,
+      "rmse": 3633742.150292955,
+      "r2": 0.9690435973960717,
+      "mape": 14.245118879842073,
+      "accuracy": 85.75488112015792
+    },
+    "lightgbm": {
+      "mae": 2147043.773438775,
+      "rmse": 3421798.619507771,
+      "r2": 0.972549442659035,
+      "mape": 20.885543776159782,
+      "accuracy": 79.11445622384021
+    },
+    "ensemble": {
+      "mae": 2135557.5329249734,
+      "rmse": 3447609.172672417,
+      "r2": 0.9721337628941508,
+      "mape": 17.10416431308886,
+      "accuracy": 82.89583568691114
+    }
+  }
+}
