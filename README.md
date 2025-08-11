@@ -32,14 +32,14 @@ A comprehensive, production-ready machine learning platform for commercial real 
 
 ```
 ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
-│   Next.js UI    │────▶│  FastAPI Backend │────▶│   ML Pipeline   │
-│  (localhost:3003)│     │ (localhost:8000) │     │   Ensemble      │
+│   Next.js UI    │────▶│  FastAPI Backend│────▶│   ML Pipeline   │
+│ (localhost:3003)│     │ (localhost:8000)│     │   Ensemble      │
 └─────────────────┘     └─────────────────┘     └─────────────────┘
          │                       │                        │
          ▼                       ▼                        ▼
 ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
-│   PostgreSQL    │     │      Redis       │     │   Monitoring    │
-│  (localhost:5432)│     │ (localhost:6379) │     │   Stack         │
+│   PostgreSQL    │     │      Redis      │     │   Monitoring    │
+│ (localhost:5432)│     │ (localhost:6379)│     │   Stack         │
 └─────────────────┘     └─────────────────┘     └─────────────────┘
 ```
 
