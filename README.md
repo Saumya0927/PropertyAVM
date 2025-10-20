@@ -1,34 +1,34 @@
-# 🏢 Automated Property Valuation Model (AVM)
+# Automated Property Valuation Model (AVM)
 
 A comprehensive, production-ready machine learning platform for commercial real estate valuation featuring ensemble ML models, real-time analytics, and interactive dashboards.
 
-> **⚠️ Development Status**: This is a **test/development version** running on local test servers. The system is a work in progress and may contain bugs. This version is **not production-ready** and should only be used for development, testing, and demonstration purposes.
+> **Development Status**: This is a **test/development version** running on local test servers. The system is a work in progress and may contain bugs. This version is **not production-ready** and should only be used for development, testing, and demonstration purposes.
 
-## 🚀 Features
+## Features
 
 ### Core ML Capabilities
-- **🎯 89.5% Accuracy**: Ensemble model combining XGBoost, LightGBM, and Neural Networks
-- **⚡ Sub-50ms Predictions**: High-performance async FastAPI backend with Redis caching
-- **📊 Uncertainty Quantification**: Confidence intervals using ensemble variance
-- **🔍 Explainable AI**: SHAP values for transparent valuation reasoning (planned)
-- **🔄 Real-time Processing**: WebSocket support for live updates
+- **89.5% Accuracy**: Ensemble model combining XGBoost, LightGBM, and Neural Networks
+- **Sub-50ms Predictions**: High-performance async FastAPI backend with Redis caching
+- **Uncertainty Quantification**: Confidence intervals using ensemble variance
+- **Explainable AI**: SHAP values for transparent valuation reasoning (planned)
+- **Real-time Processing**: WebSocket support for live updates
 
 ### Frontend Features
-- **📈 Interactive Dashboard**: Real-time analytics with Chart.js visualizations
-- **🗺️ Property Mapping**: Interactive Mapbox GL JS integration
-- **📱 Responsive Design**: Modern React/Next.js with Tailwind CSS
-- **🔥 Live Metrics**: Real-time system monitoring and performance tracking
-- **📊 Data Visualization**: Comprehensive charts for valuation trends and distributions
+- **Interactive Dashboard**: Real-time analytics with Chart.js visualizations
+- **Property Mapping**: Interactive Mapbox GL JS integration
+- **Responsive Design**: Modern React/Next.js with Tailwind CSS
+- **Live Metrics**: Real-time system monitoring and performance tracking
+- **Data Visualization**: Comprehensive charts for valuation trends and distributions
 
 ### Backend & Infrastructure
-- **🐳 Dockerized Architecture**: Complete containerization with Docker Compose
-- **⚡ FastAPI**: High-performance async Python backend
-- **🗄️ PostgreSQL**: Robust relational database with proper schemas
-- **🔴 Redis Caching**: 98% performance improvement on repeat requests
-- **📡 Real-time APIs**: RESTful endpoints for all system operations
-- **🔧 Health Monitoring**: Comprehensive system health and service status tracking
+- **Dockerized Architecture**: Complete containerization with Docker Compose
+- **FastAPI**: High-performance async Python backend
+- **PostgreSQL**: Robust relational database with proper schemas
+- **Redis Caching**: 98% performance improvement on repeat requests
+- **Real-time APIs**: RESTful endpoints for all system operations
+- **Health Monitoring**: Comprehensive system health and service status tracking
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
@@ -43,7 +43,7 @@ A comprehensive, production-ready machine learning platform for commercial real 
 └─────────────────┘     └─────────────────┘     └─────────────────┘
 ```
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **Next.js 14** with App Router
@@ -77,7 +77,7 @@ A comprehensive, production-ready machine learning platform for commercial real 
 - **Prometheus** for metrics
 - **Grafana** for dashboards
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - **Docker** & **Docker Compose** (latest versions)
@@ -104,10 +104,10 @@ docker compose ps
 ```
 
 4. **Access the applications**:
-- **🌐 Main Application**: http://localhost:3003
-- **📖 API Documentation**: http://localhost:8000/docs
-- **📊 Grafana Monitoring**: http://localhost:3001 (admin/admin)
-- **🔍 Prometheus Metrics**: http://localhost:9090
+- **Main Application**: http://localhost:3003
+- **API Documentation**: http://localhost:8000/docs
+- **Grafana Monitoring**: http://localhost:3001 (admin/admin)
+- **Prometheus Metrics**: http://localhost:9090
 
 ### Manual Setup (Alternative)
 
@@ -128,22 +128,22 @@ npm install
 npm run dev
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 property-valuation-model/
-├── 📂 backend/                    # FastAPI backend server
-│   ├── 📂 api/                   # REST API endpoints
+├── backend/                    # FastAPI backend server
+│   ├── api/                   # REST API endpoints
 │   │   ├── analytics.py          # Analytics and reporting APIs
 │   │   ├── auth.py               # Authentication endpoints
 │   │   ├── models.py             # ML model management
 │   │   ├── monitoring.py         # System monitoring APIs
 │   │   ├── properties.py         # Property management
 │   │   └── valuations.py         # Valuation prediction APIs
-│   ├── 📂 middleware/            # Custom middleware
+│   ├── middleware/            # Custom middleware
 │   │   ├── logging.py            # Request logging
 │   │   └── metrics.py            # Performance metrics
-│   ├── 📂 services/              # Business logic services
+│   ├── services/              # Business logic services
 │   │   ├── database.py           # Database connection & models
 │   │   ├── ml_service.py         # ML model loading & inference
 │   │   ├── redis_client.py       # Redis caching service
@@ -151,29 +151,29 @@ property-valuation-model/
 │   ├── main.py                   # FastAPI application entry point
 │   ├── requirements.txt          # Python dependencies
 │   └── Dockerfile               # Backend container config
-├── 📂 frontend/                  # Next.js React application
-│   ├── 📂 app/                   # Next.js app directory
-│   │   ├── 📂 dashboard/         # Analytics dashboard page
-│   │   ├── 📂 valuation/         # Property valuation calculator
+├── frontend/                  # Next.js React application
+│   ├── app/                   # Next.js app directory
+│   │   ├── dashboard/         # Analytics dashboard page
+│   │   ├── valuation/         # Property valuation calculator
 │   │   ├── globals.css           # Global styles
 │   │   ├── layout.tsx            # Root layout component
 │   │   └── page.tsx              # Homepage
-│   ├── 📂 components/            # Reusable React components
+│   ├── components/            # Reusable React components
 │   │   ├── FeatureCard.tsx       # Feature display cards
 │   │   ├── MetricsDisplay.tsx    # Real-time metrics component
 │   │   ├── PropertyMap.tsx       # Interactive property mapping
 │   │   ├── ValuationDemo.tsx     # Recent valuations display
 │   │   ├── ValuationForm.tsx     # Property input form
 │   │   └── ValuationResults.tsx  # Prediction results display
-│   ├── 📂 services/              # API integration services
+│   ├── services/              # API integration services
 │   │   ├── api.ts                # Centralized API service client
 │   │   └── hooks.ts              # Custom React hooks for data fetching
 │   ├── .env.local                # Environment variables
 │   ├── package.json              # Node.js dependencies
 │   ├── tailwind.config.js        # Tailwind CSS configuration
 │   └── Dockerfile                # Frontend container config
-├── 📂 ml-pipeline/               # Machine learning pipeline
-│   ├── 📂 models/                # Trained model artifacts
+├── ml-pipeline/               # Machine learning pipeline
+│   ├── models/                # Trained model artifacts
 │   │   ├── xgboost_model.pkl     # XGBoost model
 │   │   ├── lightgbm_model.pkl    # LightGBM model
 │   │   ├── neural_network_model.h5 # Neural network model
@@ -182,28 +182,28 @@ property-valuation-model/
 │   ├── train_ensemble.py         # Ensemble model training
 │   ├── train_simple.py           # Individual model training
 │   └── train_nn_only.py          # Neural network specific training
-├── 📂 data-generator/            # Synthetic data generation
+├── data-generator/            # Synthetic data generation
 │   ├── generate_synthetic_data.py # Property data generator
 │   └── requirements.txt          # Python dependencies
-├── 📂 lambda-functions/          # AWS Lambda functions (future use)
-├── 📂 infrastructure/            # Infrastructure configuration
+├── lambda-functions/          # AWS Lambda functions (future use)
+├── infrastructure/            # Infrastructure configuration
 │   ├── init.sql                  # Database initialization
-│   └── 📂 localstack/            # LocalStack AWS simulation
-├── 📂 monitoring/                # System monitoring configuration
-│   ├── 📂 grafana/               # Grafana dashboards
-│   └── 📂 prometheus/            # Prometheus configuration
-├── 📂 scripts/                   # Utility scripts
+│   └── localstack/            # LocalStack AWS simulation
+├── monitoring/                # System monitoring configuration
+│   ├── grafana/               # Grafana dashboards
+│   └── prometheus/            # Prometheus configuration
+├── scripts/                   # Utility scripts
 │   ├── init_db.sh                # Database initialization
 │   ├── setup.sh                  # Complete system setup
 │   └── train_models.sh           # Model training automation
-├── 📂 tests/                     # Test suites (empty - development needed)
+├── tests/                     # Test suites (empty - development needed)
 ├── docker-compose.yml            # Multi-service Docker configuration
 ├── Makefile                      # Build automation
 ├── QUICKSTART.md                 # Quick setup guide
 └── README.md                     # This file
 ```
 
-## 🔗 API Endpoints
+## API Endpoints
 
 ### Valuation APIs
 - **`POST /api/v1/valuations/predict`** - Generate property valuation
@@ -252,7 +252,7 @@ curl http://localhost:8000/api/v1/analytics/summary
 curl http://localhost:8000/api/v1/monitoring/live-metrics
 ```
 
-## 📊 Current Model Performance
+## Current Model Performance
 
 | Metric | Value |
 |--------|-------|
@@ -262,7 +262,7 @@ curl http://localhost:8000/api/v1/monitoring/live-metrics
 | **Models Loaded** | 3 (XGBoost, LightGBM, Neural Network) |
 | **Uncertainty Range** | Typically ±5-12% |
 
-## 🔧 Development
+## Development
 
 ### Running in Development Mode
 
@@ -305,13 +305,13 @@ python train_simple.py
 docker exec -it avm-postgres psql -U postgres -d property_valuation
 ```
 
-## 📈 Monitoring & Observability
+## Monitoring & Observability
 
 ### Available Dashboards
-- **🌐 Main App**: http://localhost:3003 - Property valuation interface
-- **📊 Grafana**: http://localhost:3001 - System monitoring (admin/admin)
-- **🔍 Prometheus**: http://localhost:9090 - Metrics collection
-- **📖 API Docs**: http://localhost:8000/docs - Interactive API documentation
+- **Main App**: http://localhost:3003 - Property valuation interface
+- **Grafana**: http://localhost:3001 - System monitoring (admin/admin)
+- **Prometheus**: http://localhost:9090 - Metrics collection
+- **API Docs**: http://localhost:8000/docs - Interactive API documentation
 
 ### Key Metrics Tracked
 - **System Performance**: CPU usage, memory consumption, uptime
@@ -320,18 +320,18 @@ docker exec -it avm-postgres psql -U postgres -d property_valuation
 - **Business Metrics**: Total valuations, property distribution, growth rates
 - **Service Health**: Database connectivity, Redis status, model availability
 
-## ⚠️ Known Limitations & Development Status
+## Known Limitations & Development Status
 
 ### Current Development Status
-- ✅ **Core ML Pipeline**: Fully functional with ensemble models
-- ✅ **Backend APIs**: Complete REST API implementation
-- ✅ **Frontend Interface**: Interactive web application
-- ✅ **Real-time Analytics**: Live dashboards and metrics
-- ✅ **Docker Deployment**: Containerized architecture
-- 🟡 **Testing**: Test suites need development
-- 🟡 **Documentation**: Some API endpoints need detailed docs
-- 🟡 **Error Handling**: Some edge cases need improvement
-- 🔴 **Production Security**: Not configured for production deployment
+- **Core ML Pipeline**: Fully functional with ensemble models
+- **Backend APIs**: Complete REST API implementation
+- **Frontend Interface**: Interactive web application
+- **Real-time Analytics**: Live dashboards and metrics
+- **Docker Deployment**: Containerized architecture
+- **Testing**: Test suites need development
+- **Documentation**: Some API endpoints need detailed docs
+- **Error Handling**: Some edge cases need improvement
+- **Production Security**: Not configured for production deployment
 
 ### Known Issues
 - **Database Health**: Occasional connectivity issues in monitoring
@@ -348,7 +348,7 @@ This system is specifically designed as a **development/test version** and inclu
 - Simplified error handling
 - Debug logging enabled
 
-## 🤝 Contributing
+## Contributing
 
 This is a development project. Areas needing improvement:
 1. **Testing**: Unit tests, integration tests, end-to-end tests
@@ -358,11 +358,8 @@ This is a development project. Areas needing improvement:
 5. **Performance**: Query optimization, caching strategies
 6. **Features**: Advanced ML features, additional property types
 
-## 📜 License
 
-MIT License - see LICENSE file for details.
-
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Machine Learning**: Inspired by modern property valuation methodologies
 - **Architecture**: Based on production ML system patterns
@@ -371,4 +368,4 @@ MIT License - see LICENSE file for details.
 
 ---
 
-**⚠️ Important Reminder**: This is a **test/development system** running on local servers. It contains bugs, uses test data, and is not suitable for production use. Use only for development, learning, and demonstration purposes.
+**Important Reminder**: This is a **test/development system** running on local servers. It contains bugs, uses test data, and is not suitable for production use. Use only for development, learning, and demonstration purposes.
